@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "EPFL-StrongAuth-AutoFill",
+    "description": "Automatically fill the strong authentication code.",
+    "version": "1.0",
+    "content_scripts": [
+      {
+        "js": ["scripts/content.js"],
+        "matches": [
+          "https://tequila.epfl.ch/tequila/*"
+        ]
+      }
+    ],
+    "options_ui": {
+      "page": "options.html",
+      "open_in_tab": false
+    },
+    "permissions": [
+      "storage"
+    ]
+  }

@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "fs": "^0.0.1-security",
+    "hi-base32": "^0.5.1",
+    "html5-qrcode": "^2.3.8",
+    "protobufjs-cli": "^1.1.2",
+    "totp-generator": "^0.0.14"
+  },
+  "name": "epfl-strong-auth-autofill",
+  "version": "1.0.0",
+  "description": "Automatically fill the strong authentication code for EPFL's email website.",
+  "scripts": {
+    "build": "node build.js",
+    "clean": "sh ./clean.sh"
+  },
+  "author": "Jiawei Lin",
+  "email": "jiawei.lin@epfl.ch",
+  "license": "BSD-3-Clause"
+}
