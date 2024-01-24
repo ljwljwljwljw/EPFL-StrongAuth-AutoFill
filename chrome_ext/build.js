@@ -1,6 +1,6 @@
 const pbjs = require("protobufjs-cli/pbjs");
 const fs = require("fs");
-const args = "-t static-module -o MigrationPayload.js MigrationPayload.proto".split(' ');
+const args = "-t static-module -o build/scripts/MigrationPayload.js ../MigrationPayload.proto".split(' ');
 pbjs.main(args);
 
 const browserify = require("browserify");
@@ -13,6 +13,6 @@ function bundle_file(in_file, out_file) {
     rs.pipe(ws);
 }
 
-bundle_file('content_gen.js', 'auto_fill/scripts/content.js')
-bundle_file('options_gen.js', 'auto_fill/scripts/options.js')
+bundle_file('content_gen.js', 'build/scripts/content.js')
+bundle_file('options_gen.js', 'build/scripts/options.js')
 

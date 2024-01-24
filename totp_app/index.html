@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self'" />
+  <meta http-equiv="X-Content-Security-Policy" content="script-src 'self'" />
+  <title>TOTP Sync</title>
+</head>
+
+<body>
+  <div id="reader"></div>
+  <div id="status" style="text-align: center; font-size: large;"></div>
+  <div id="work">
+    <center>
+    <progress id="progress" style="text-align: center;" value="0" max="30"></progress>
+    <div id="tips" style="font-size: large;"></div>
+    <button id="update">Update QR Code</button>
+    </center>
+  </div>
+</body>
+<script src="html5-qrcode.min.js"></script>
+<script src="render.js"></script>
+
+</html>

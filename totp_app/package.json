@@ -1,0 +1,31 @@
+{
+  "name": "totp-sync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "Jiawei Lin",
+  "email": "jiawei.lin@epfl.ch",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.2.0",
+    "@electron-forge/maker-deb": "^7.2.0",
+    "@electron-forge/maker-rpm": "^7.2.0",
+    "@electron-forge/maker-squirrel": "^7.2.0",
+    "@electron-forge/maker-zip": "^7.2.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.2.0",
+    "electron": "^28.1.4"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-store": "^8.1.0",
+    "hi-base32": "^0.5.1",
+    "html5-qrcode": "^2.3.8",
+    "protobufjs": "^7.2.6",
+    "totp-generator": "^0.0.14"
+  }
+}
